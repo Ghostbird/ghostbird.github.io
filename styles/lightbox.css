@@ -1,0 +1,107 @@
+/* lightbox.css for Ghostbird Website by Gijsbert ter Horst.
+ This work is licensed under a Creative Commons Attribution, Non-Commercial, Share-Alike Licence */
+
+.overlay
+{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 999;
+  background: rgba(0,0,0,0.7);
+}
+
+.overlay label
+{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+
+.overlay img
+{
+  border:solid 2px #68765d;
+  margin:0.1vw;
+  background: #ffffff;
+  max-height:90vh;
+  max-width:90vw;
+}
+.overlay p
+{
+  display:inline-block;
+  border:solid 2px #68765d;
+  background: #101010;
+  border-bottom:0;
+  text-align:justify;
+  position: fixed;
+  bottom:0;
+  left:5vw;
+  right:5vw;
+  margin: 0.2vh -2px -0 -2px;
+  max-height:4vh;
+  overflow:hidden;
+  padding:0.2vh;
+}
+
+.overlay p:hover
+{
+  border:solid 2px #68765d;
+  max-height:none;
+  margin-bottom: 0.2vh;
+}
+
+.lightboxlabel:hover
+{
+  cursor: pointer;
+}
+
+.lightboxcontrol
+{
+  display: none;
+}
+
+.overlay .next,
+.overlay .previous
+{
+  height: 0;
+  width: 0;
+  border-top: 2.5vw solid transparent;
+  border-bottom: 2.5vw solid transparent;
+  position:fixed;
+  top:50%;
+  margin-top:-2.5vw;
+}
+
+.overlay .next
+{
+  border-left: 4vw solid #68765d;
+  right:0;
+}
+
+.overlay .next:hover
+{
+  border-left: 4vw solid #e0ffd1;
+}
+
+.overlay .previous
+{
+  border-right: 4vw solid #68765d;
+  left:0;
+}
+
+.overlay .previous:hover
+{
+  border-right: 4vw solid #e0ffd1;
+}
+.lightboxcontrol:checked + .overlay
+{
+  display: table;
+}
+
+#close
+{
+  display: none;
+}

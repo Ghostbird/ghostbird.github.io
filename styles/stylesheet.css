@@ -1,0 +1,194 @@
+html
+{
+  background: #435237;
+}
+
+body
+{
+  position:relative;
+  max-width: 1024px;
+  min-width: 320px;
+  background: #222222;
+  color: #e0ffd1;
+  border: solid #000000;
+  border-top: 0;
+  border-bottom: 2px;
+  border-left: 2px;
+  border-right: 2px;
+  margin: 0 auto 1vh auto;
+  min-height: 98vh;
+  overflow-y:scroll;
+  text-align:justify;
+  font-family:  Freesans, Arial, sans-serif;
+  font-kerning: auto;
+  font-variant-ligatures: common-ligatures discretionary historical contextual;
+  font-variant-numeric: oldstyle-nums diagonal-fractions;
+}
+
+body::after
+{
+  font-size:x-small;
+  content: "© Gijsbert ter Horst 2016 – Individual works on this website may be licensed under Creative Commons licences, in that case the licence information is present in the file meta-data.";
+  position: absolute;
+  top:100%;
+  margin: 0.1vh 2vw 1vh 2vw;
+}
+
+h2, h3, h4
+{
+  text-align:left;
+}
+
+@media only screen and (min-width: 640px) and (min-height: 480px)
+{
+  #title
+  {
+    display:none;
+  }
+  #banner
+  {
+    width:100%;
+    height:128px;
+    background-image: url('/images/banner-plain.svg');
+    background-color: transparent;
+    background-position: right top;
+    background-repeat: no-repeat;
+    overflow:hidden;
+  }
+  #navbar > a
+  {
+    font-size: 20pt;
+    border: #e0ffd1 solid 2px;
+    width:18.5%;
+  }
+}
+@media not screen and (min-width: 640px) and (min-height: 480px)
+{
+  #title
+  {
+    float:none;
+    height:100%;
+    overflow:hidden;
+  }
+  #navbar > a
+  {
+    font-size: 12pt;
+    border: #e0ffd1 solid 1px;
+    width:18%;
+  }
+}
+
+#title h1
+{
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#header
+{
+  display:inline-block;
+  width:100%;
+}
+
+#navbar
+{
+  display:block;
+  text-align: justify;
+  margin: 0 0.5vw;
+}
+
+#navbar:after
+{
+  width:100%;
+  content: '';
+  display:inline-block;
+  height:0;
+  margin:0;
+}
+
+#navbar > a
+{
+  display:inline-block;
+  color: #e0ffd1;
+  text-decoration:none;
+  text-align:center;
+  font-variant: small-caps;
+  overflow:hidden;
+}
+
+#content
+{
+  padding: 0 2vw 1vh 2vw;
+  height:100%;
+}
+
+#content ul
+{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#content ul li
+{
+  background-image: url('/images/wing-icon-16-plain.svg');
+  background-repeat: no-repeat;
+  background-position: 0px center;
+  padding-left: 17px;
+}
+
+#copyright
+{
+  font-size: 7.5pt;
+  position:absolute;
+  bottom:5px;
+  left: 2vw;
+  margin-right:2vw;
+  overflow:hidden;
+}
+
+a
+{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: #68765d;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.framed
+{
+  float:right;
+  border: solid 2px #68765d;
+  margin-left:3%;
+  max-width:25%;
+  max-height:25%;
+  padding:2px;
+  text-align:center;
+}
+
+.framed > img
+{
+  display:inline-block;
+  max-height:100%;
+  max-width:100%;
+}
+
+.framed::after
+{
+  font-style: italic;
+  display:inline;
+  content: attr(data-caption);
+  font-size:small;
+}
+
+.entry
+{
+  display:inline-block;
+  width:100%;
+}
