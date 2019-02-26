@@ -33,13 +33,16 @@
         Security
       </h3>
       <p>
-        As you may have expected, security was my primary concern. Because this website does not need programmed functionality (e.g. a login page) I decided to use plain HTML and CSS. That way I avoid the security issues that may occur on a web server that execute code such as PHP.
+        As you may have expected, security was my primary concern. Because this website does not need programmed functionality (e.g. a login page) I decided to use plain HTML and CSS. That way I avoid the security issues that may occur on a web server that executes code.
       </p>
       <p>
-        I opted to make the website work without scripts. While JavaScript certainly has found its place in the modern web, I tend to avoid it whenever possible due to the significant security and privacy issues that come with it.
+        I opted to make the website work without scripts. I tend to block it by default and only allow it on trusted domains. When I designed this site I kept that in mind, and concluded that my requirements could be implemented without scripts.
       </p>
       <p>
-        I decided to use common typefaces for this page, though I had some nice typefaces that would have looked better, you need to download that typeface from the internet while the page loads. However such downloaded typefaces may contain malicious payloads and therefore this behaviour is often blocked or restricted. I decided to stick to basic FreeSans and Arial to avoid such issues. 
+        I decided to use common typefaces for this page, though I had some nice typefaces that would have looked better, such typefaces might be blocked as they are a vector for malicious payloads. I decided to stick to basic FreeSans and Arial to avoid such issues. 
+      </p>
+      <p>
+        The issue these two techniques have in common is that they rely on
       </p>
       <h3>
         Ease of access
@@ -48,7 +51,7 @@
         You may have noticed that the design is responsive to some changes, try resizing the browser window and you will see that the page changes to match the new size to an extent. CSS3 allows for partial responsive design where previously this was all left to scripts. I consider CSS the “correct” way to create a responsive UI – it is the part responsible for the style of the page – but alas the development, acceptance and support of new CSS standards is not as fast as the changes in webpage usage in recent years. Therefore this website could have had a more responsive design through the use of scripts.
       </p>
       <p>
-        An advantage of not using JavaScript is that the website is not slowed down by scripts, and will probably load and render fast even on devices with very limited processing capacities. However this limits how large an image gallery I can include in a single page. For image galleries JavaScript is a very good choice since it can be used to ensure that the images are only loaded when they are needed.
+        An advantage of not using JavaScript is that the website is not slowed down by scripts, and will probably load and render fast even on devices with very limited processing capacities. Given the increase in processing power of even the low-end web-capable devices, this is not much of a concern any more.
       </p>
       <h3>
         Graphical design
